@@ -28,7 +28,7 @@ spec:
 #     - key: name
 #       value: argo-demo-dbsubnetgroup
 # ---
-# apiVersion: network.aws.crossplane.io/v1alpha3
+# apiVersion: ec2.aws.crossplane.io/v1beta1
 # kind: SecurityGroup
 # metadata:
 #   name: eks-securitygroup
@@ -36,7 +36,7 @@ spec:
 #   vpcIdRef:
 #     name: argo-vpc
 # ---
-# apiVersion: network.aws.crossplane.io/v1alpha3
+# apiVersion: ec2.aws.crossplane.io/v1beta1
 # kind: SecurityGroup
 # metadata:
 #   name: rds-securitygroup
