@@ -24,7 +24,7 @@ spec:
           ports:
             - name: http
               containerPort: 8080
-              protocol: TCP
+              ipProtocol: TCP
   parameters:
     - name: flightsUri
       description: uri for flights-api pod

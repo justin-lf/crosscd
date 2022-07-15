@@ -30,7 +30,7 @@ spec:
       - cidrIp: 0.0.0.0/0
         description: all ips
       fromPort: 3306
-      protocol: tcp
+      ipProtocol: tcp
       toPort: 3306
     vpcIdRef:
       name: argo-east-vpc

@@ -24,7 +24,7 @@ spec:
           ports:
             - name: postgres
               containerPort: 5432
-              protocol: TCP
+              ipProtocol: TCP
           readinessProbe:
             exec:
               command:

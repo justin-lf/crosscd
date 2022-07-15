@@ -5,13 +5,15 @@ metadata:
     provider: aws
   name: argo-west-subnet1
 spec:
-  availabilityZone: us-west-2a
-  cidrBlock: 192.168.64.0/18
+  forProvider:
+    availabilityZone: us-west-2a
+    cidrBlock: 192.168.64.0/18
+    vpcIdRef:
+      name: argo-west-vpc
   providerConfigRef:
     name: aws-provider-west
   deletionPolicy: Delete
-  vpcIdRef:
-    name: argo-west-vpc
+  
 ---
 apiVersion: ec2.aws.crossplane.io/v1beta1
 kind: Subnet
@@ -20,13 +22,15 @@ metadata:
     provider: aws
   name: argo-west-subnet2
 spec:
-  availabilityZone: us-west-2b
-  cidrBlock: 192.168.128.0/18
+  forProvider:
+    availabilityZone: us-west-2b
+    cidrBlock: 192.168.128.0/18
+    vpcIdRef:
+      name: argo-west-vpc
   providerConfigRef:
     name: aws-provider-west
   deletionPolicy: Delete
-  vpcIdRef:
-    name: argo-west-vpc
+  
 ---
 apiVersion: ec2.aws.crossplane.io/v1beta1
 kind: Subnet
@@ -35,10 +39,12 @@ metadata:
     provider: aws
   name: argo-west-subnet3
 spec:
-  availabilityZone: us-west-2c
-  cidrBlock: 192.168.192.0/18
+  forProvider:
+    availabilityZone: us-west-2c
+    cidrBlock: 192.168.192.0/18
+    vpcIdRef:
+      name: argo-west-vpc
   providerConfigRef:
     name: aws-provider-west
   deletionPolicy: Delete
-  vpcIdRef:
-    name: argo-west-vpc
+  

@@ -38,7 +38,7 @@ spec:
           ports:
             - name: http
               containerPort: 3009
-              protocol: TCP
+              ipProtocol: TCP
           readinessProbe:
             exec:
               command:
