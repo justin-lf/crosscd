@@ -3,16 +3,18 @@ kind: RolePolicyAttachment
 metadata:
   name: cluster-iamrolepolicyattachment
 spec:
-  roleNameRef:
-    name: argo-iamrole
+  forProvider:
+    roleNameRef:
+      name: argo-iamrole
 ---
 apiVersion: iam.aws.crossplane.io/v1beta1
 kind: RolePolicyAttachment
 metadata:
   name: service-iamrolepolicyattachment
 spec:
-  roleNameRef:
-    name: argo-iamrole
+  forProvider:
+    roleNameRef:
+      name: argo-iamrole
 ---
 # apiVersion: database.aws.crossplane.io/v1alpha3
 # kind: DBSubnetGroup

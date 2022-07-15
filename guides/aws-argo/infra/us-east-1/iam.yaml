@@ -36,8 +36,9 @@ spec:
   providerRef:
     name: aws-provider-east
   reclaimPolicy: Delete
-  roleNameRef:
-    name: argo-east-iamrole
+  forProvider:
+    roleNameRef:
+      name: argo-east-iamrole
 ---
 apiVersion: iam.aws.crossplane.io/v1beta1
 kind: RolePolicyAttachment
@@ -50,5 +51,6 @@ spec:
   providerRef:
     name: aws-provider-east
   reclaimPolicy: Delete
-  roleNameRef:
-    name: argo-east-iamrole
+  forProvider:
+    roleNameRef:
+      name: argo-east-iamrole

@@ -8,7 +8,8 @@ spec:
   #   name: sample-eks-cluster-role
   # roleName: my-role
   ## wellknown policy arn
-  policyArn: arn:aws:iam::aws:policy/AmazonEKSServicePolicy
-  reclaimPolicy: Delete
-  providerRef:
+  forProvider:
+    policyArn: arn:aws:iam::aws:policy/AmazonEKSServicePolicy
+  deletionPolicy: Delete
+  providerConfigRef:
     name: aws-provider
