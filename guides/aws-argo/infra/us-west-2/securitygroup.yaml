@@ -26,7 +26,7 @@ spec:
     description: security group for wordpress rds
     groupName: argo-west-rds-sg
     ingress:
-    - cidrBlocks:
+    - ipRanges:
       - cidrIp: 0.0.0.0/0
         description: all ips
       fromPort: 3306
