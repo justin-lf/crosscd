@@ -5,13 +5,15 @@ metadata:
     provider: aws
   name: argo-west-eks-securitygroup
 spec:
-  description: security group for wordpress eks
-  groupName: argo-west-eks-sg
+  forProvider:
+    description: security group for wordpress eks
+    groupName: argo-west-eks-sg
+    vpcIdRef:
+      name: argo-west-vpc
   providerConfigRef:
     name: aws-provider-west
   deletionPolicy: Delete
-  vpcIdRef:
-    name: argo-west-vpc
+  
 ---
 apiVersion: ec2.aws.crossplane.io/v1beta1
 kind: SecurityGroup
@@ -20,17 +22,19 @@ metadata:
     provider: aws
   name: argo-west-rds-securitygroup
 spec:
-  description: security group for wordpress rds
-  groupName: argo-west-rds-sg
-  ingress:
-  - cidrBlocks:
-    - cidrIp: 0.0.0.0/0
-      description: all ips
-    fromPort: 3306
-    protocol: tcp
-    toPort: 3306
+  forProvider:
+    description: security group for wordpress rds
+    groupName: argo-west-rds-sg
+    ingress:
+    - cidrBlocks:
+      - cidrIp: 0.0.0.0/0
+        description: all ips
+      fromPort: 3306
+      protocol: tcp
+      toPort: 3306
+    vpcIdRef:
+      name: argo-west-vpc
   providerConfigRef:
     name: aws-provider-west
   deletionPolicy: Delete
-  vpcIdRef:
-    name: argo-west-vpc
+

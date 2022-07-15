@@ -3,12 +3,13 @@ kind: SecurityGroup
 metadata:
   name: securitygroup
 spec:
-  groupName: my-cool-securitygroup
-  description: some cool description
   ## must provide one of vpcIdRef or vpcId
   # vpcIdRef:
   #   name: sample-vpc
   # vpcId: name-of-my-vpc
   deletionPolicy: Delete
+  forProvider:
+    groupName: my-cool-securitygroup
+    description: some cool description
   providerConfigRef:
     name: aws-provider
