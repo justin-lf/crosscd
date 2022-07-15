@@ -12,6 +12,6 @@ bases:
 - ../../../../../aws/services/network/internetgateway
 - ../../../../../aws/services/network/routetable
 - ../../../../../aws/services/network/vpc
-- ../../../../../aws/environments/dev
+# - ../../../../../aws/environments/dev
 patches:
 - patch.yaml
