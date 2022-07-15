@@ -53,6 +53,19 @@ metadata:
 spec:
   forProvider:
     description: iam role for wordpress eks
+    assumeRolePolicyDocument: |
+      {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Principal": {
+              "Service": "eks.amazonaws.com"
+            },
+            "Action": "sts:AssumeRole"
+          }
+        ]
+      }
 # ---
 # apiVersion: ec2.aws.crossplane.io/v1beta1
 # kind: InternetGateway
