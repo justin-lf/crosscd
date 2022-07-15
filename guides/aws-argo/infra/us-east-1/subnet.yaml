@@ -1,4 +1,4 @@
-apiVersion: network.aws.crossplane.io/v1alpha3
+apiVersion: ec2.aws.crossplane.io/v1beta1
 kind: Subnet
 metadata:
   labels:
@@ -13,7 +13,7 @@ spec:
   vpcIdRef:
     name: argo-east-vpc
 ---
-apiVersion: network.aws.crossplane.io/v1alpha3
+apiVersion: ec2.aws.crossplane.io/v1beta1
 kind: Subnet
 metadata:
   labels:
@@ -28,7 +28,7 @@ spec:
   vpcIdRef:
     name: argo-east-vpc
 ---
-apiVersion: network.aws.crossplane.io/v1alpha3
+apiVersion: ec2.aws.crossplane.io/v1beta1
 kind: Subnet
 metadata:
   labels:
