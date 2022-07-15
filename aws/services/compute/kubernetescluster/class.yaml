@@ -34,6 +34,6 @@ specTemplate:
     # clusterControlPlaneSecurityGroup: sg-01
     # clusterControlPlaneSecurityGroupRef:
     #   name: sample-cluster-sg
-  providerRef:
+  providerConfigRef:
     name: aws-provider
-  reclaimPolicy: Delete
+  deletionPolicy: Delete

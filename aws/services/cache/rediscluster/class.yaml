@@ -4,9 +4,9 @@ metadata:
   name: replicationgroup
 specTemplate:
   writeConnectionSecretsToNamespace: crossplane-system
-  providerRef:
+  providerConfigRef:
     name: aws-provider
-  reclaimPolicy: Delete
+  deletionPolicy: Delete
   forProvider:
     replicationGroupDescription: "A standard replication group"
     applyModificationsImmediately: true

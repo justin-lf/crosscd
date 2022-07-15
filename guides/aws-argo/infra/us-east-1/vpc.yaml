@@ -8,6 +8,6 @@ spec:
   cidrBlock: 192.168.0.0/16
   enableDnsHostNames: true
   enableDnsSupport: true
-  providerRef:
+  providerConfigRef:
     name: aws-provider-east
-  reclaimPolicy: Delete
+  deletionPolicy: Delete

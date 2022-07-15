@@ -14,6 +14,6 @@ spec:
         ipCidrRange: 172.16.0.0/16
     networkRef:
       name: argo-oam-network
-  reclaimPolicy: Delete
-  providerRef:
+  deletionPolicy: Delete
+  providerConfigRef:
     name: gcp-provider

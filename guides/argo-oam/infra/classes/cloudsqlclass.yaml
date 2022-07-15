@@ -4,9 +4,9 @@ metadata:
   name: argo-oam-cloudsql
 specTemplate:
   writeConnectionSecretsToNamespace: crossplane-system
-  providerRef:
+  providerConfigRef:
     name: gcp-provider
-  reclaimPolicy: Delete
+  deletionPolicy: Delete
   forProvider:
     databaseVersion: POSTGRES_9_6
     region: us-central1

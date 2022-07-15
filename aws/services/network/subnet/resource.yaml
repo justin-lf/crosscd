@@ -8,6 +8,6 @@ spec:
   # vpcIdRef:
   #   name: sample-vpc
   availabilityZone: us-west-2a
-  reclaimPolicy: Delete
-  providerRef:
+  deletionPolicy: Delete
+  providerConfigRef:
     name: aws-provider

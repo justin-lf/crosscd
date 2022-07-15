@@ -4,6 +4,6 @@ metadata:
   name: vpc
 spec:
   cidrBlock: 192.168.0.0/16
-  reclaimPolicy: Delete
-  providerRef:
+  deletionPolicy: Delete
+  providerConfigRef:
     name: aws-provider

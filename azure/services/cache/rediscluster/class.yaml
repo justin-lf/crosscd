@@ -11,6 +11,6 @@ specTemplate:
     family: C
     capacity: 2
   enableNonSslPort: true
-  providerRef:
+  providerConfigRef:
     name: azure-provider
-  reclaimPolicy: Delete
+  deletionPolicy: Delete

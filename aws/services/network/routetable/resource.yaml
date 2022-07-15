@@ -19,6 +19,6 @@ spec:
   #       name: sample-subnet2
   #   - subnetIdRef:
   #       name: sample-subnet3
-  reclaimPolicy: Delete
-  providerRef:
+  deletionPolicy: Delete
+  providerConfigRef:
     name: aws-provider

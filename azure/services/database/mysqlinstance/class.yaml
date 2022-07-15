@@ -20,6 +20,6 @@ specTemplate:
     storageGB: 50
     backupRetentionDays: 7
     geoRedundantBackup: false
-  providerRef:
+  providerConfigRef:
     name: azure-provider
-  reclaimPolicy: Delete
+  deletionPolicy: Delete

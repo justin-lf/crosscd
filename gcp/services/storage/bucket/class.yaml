@@ -6,6 +6,6 @@ specTemplate:
   writeConnectionSecretsToNamespace: crossplane-system
   location: US
   storageClass: MULTI_REGIONAL
-  providerRef:
+  providerConfigRef:
     name: gcp-provider
-  reclaimPolicy: Delete
+  deletionPolicy: Delete

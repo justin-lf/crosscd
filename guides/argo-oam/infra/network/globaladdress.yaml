@@ -9,6 +9,6 @@ spec:
     prefixLength: 16
     networkRef:
       name: argo-oam-network
-  reclaimPolicy: Delete
-  providerRef:
+  deletionPolicy: Delete
+  providerConfigRef:
     name: gcp-provider

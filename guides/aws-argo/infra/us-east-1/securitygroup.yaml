@@ -7,9 +7,9 @@ metadata:
 spec:
   description: security group for wordpress eks
   groupName: argo-east-eks-sg
-  providerRef:
+  providerConfigRef:
     name: aws-provider-east
-  reclaimPolicy: Delete
+  deletionPolicy: Delete
   vpcIdRef:
     name: argo-east-vpc
 ---
@@ -29,8 +29,8 @@ spec:
     fromPort: 3306
     protocol: tcp
     toPort: 3306
-  providerRef:
+  providerConfigRef:
     name: aws-provider-east
-  reclaimPolicy: Delete
+  deletionPolicy: Delete
   vpcIdRef:
     name: argo-east-vpc

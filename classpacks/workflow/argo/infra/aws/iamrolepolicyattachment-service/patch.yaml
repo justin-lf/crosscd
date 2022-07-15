@@ -3,4 +3,5 @@ kind: RolePolicyAttachment
 metadata:
   name: iamrolepolicyattachment
 spec:
-  policyArn: arn:aws:iam::aws:policy/AmazonEKSServicePolicy
+  forProvider:
+    policyArn: arn:aws:iam::aws:policy/AmazonEKSServicePolicy

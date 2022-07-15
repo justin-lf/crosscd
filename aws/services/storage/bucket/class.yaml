@@ -8,6 +8,6 @@ specTemplate:
   cannedACL: private
   region: us-east-1
   localPermission: ReadWrite
-  providerRef:
+  providerConfigRef:
     name: aws-provider
-  reclaimPolicy: Delete
+  deletionPolicy: Delete

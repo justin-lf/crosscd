@@ -7,6 +7,6 @@ spec:
     autoCreateSubnetworks: false
     routingConfig:
       routingMode: REGIONAL
-  reclaimPolicy: Delete
-  providerRef:
+  deletionPolicy: Delete
+  providerConfigRef:
     name: gcp-provider

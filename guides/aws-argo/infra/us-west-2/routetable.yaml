@@ -12,9 +12,9 @@ spec:
       name: argo-west-subnet2
   - subnetIdRef:
       name: argo-west-subnet3
-  providerRef:
+  providerConfigRef:
     name: aws-provider-west
-  reclaimPolicy: Delete
+  deletionPolicy: Delete
   routes:
   - destinationCidrBlock: 0.0.0.0/0
     gatewayIdRef:

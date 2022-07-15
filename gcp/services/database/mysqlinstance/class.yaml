@@ -13,6 +13,6 @@ specTemplate:
       dataDiskSizeGb: 50
       ipConfiguration:
         ipv4Enabled: true
-  providerRef:
+  providerConfigRef:
     name: gcp-provider
-  reclaimPolicy: Delete
+  deletionPolicy: Delete

@@ -16,9 +16,9 @@ specTemplate:
     skipFinalSnapshotBeforeDeletion: true
     vpcSecurityGroupIDRefs:
     - name: argo-west-rds-securitygroup
-  providerRef:
+  providerConfigRef:
     name: aws-provider-west
-  reclaimPolicy: Delete
+  deletionPolicy: Delete
   writeConnectionSecretsToNamespace: crossplane-system
 ---
 apiVersion: database.aws.crossplane.io/v1alpha3
@@ -35,6 +35,6 @@ spec:
   tags:
     - key: name
       value: argo-west-dbsubnetgroup
-  reclaimPolicy: Delete
-  providerRef:
+  deletionPolicy: Delete
+  providerConfigRef:
     name: aws-provider-west

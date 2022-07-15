@@ -9,6 +9,6 @@ spec:
   # vpcIdRef:
   #   name: sample-vpc
   # vpcId: name-of-my-vpc
-  reclaimPolicy: Delete
-  providerRef:
+  deletionPolicy: Delete
+  providerConfigRef:
     name: aws-provider

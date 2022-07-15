@@ -8,6 +8,6 @@ specTemplate:
     tier: STANDARD_HA
     region: us-west2
     memorySizeGb: 3
-  providerRef:
+  providerConfigRef:
     name: gcp-provider
-  reclaimPolicy: Delete
+  deletionPolicy: Delete

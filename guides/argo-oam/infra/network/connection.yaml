@@ -9,6 +9,6 @@ spec:
       name: argo-oam-network
     reservedPeeringRangeRefs:
       - name: argo-oam-ga
-  reclaimPolicy: Delete
-  providerRef:
+  deletionPolicy: Delete
+  providerConfigRef:
     name: gcp-provider

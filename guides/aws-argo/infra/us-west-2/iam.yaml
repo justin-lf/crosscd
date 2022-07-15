@@ -20,9 +20,9 @@ spec:
         ]
       }
     description: iam role for wordpress eks
-  providerRef:
+  providerConfigRef:
     name: aws-provider-west
-  reclaimPolicy: Delete
+  deletionPolicy: Delete
   roleName: argo-west-iamrole
 ---
 apiVersion: iam.aws.crossplane.io/v1beta1
@@ -33,9 +33,9 @@ metadata:
   name: argo-west-cluster-iamrolepolicyattachment
 spec:
   policyArn: arn:aws:iam::aws:policy/AmazonEKSClusterPolicy
-  providerRef:
+  providerConfigRef:
     name: aws-provider-west
-  reclaimPolicy: Delete
+  deletionPolicy: Delete
   forProvider:
     roleNameRef:
       name: argo-west-iamrole
@@ -48,9 +48,9 @@ metadata:
   name: argo-west-service-iamrolepolicyattachment
 spec:
   policyArn: arn:aws:iam::aws:policy/AmazonEKSServicePolicy
-  providerRef:
+  providerConfigRef:
     name: aws-provider-west
-  reclaimPolicy: Delete
+  deletionPolicy: Delete
   forProvider:
     roleNameRef:
       name: argo-west-iamrole

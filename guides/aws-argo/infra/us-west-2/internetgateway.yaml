@@ -5,8 +5,8 @@ metadata:
     provider: aws
   name: argo-west-internetgateway
 spec:
-  providerRef:
+  providerConfigRef:
     name: aws-provider-west
-  reclaimPolicy: Delete
+  deletionPolicy: Delete
   vpcIdRef:
     name: argo-west-vpc
