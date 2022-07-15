@@ -6,7 +6,7 @@ spec:
   roleNameRef:
     name: argo-iamrole
 ---
-apiVersion: identity.aws.crossplane.io/v1alpha3
+apiVersion: iam.aws.crossplane.io/v1beta1
 kind: IAMRolePolicyAttachment
 metadata:
   name: service-iamrolepolicyattachment
