@@ -1,9 +1,8 @@
 apiVersion: iam.aws.crossplane.io/v1beta1
 kind: Role
 metadata:
-  name: iamrole
+  name: argo-iamrole
 spec:
-  roleName: my-cool-iamrole
   forProvider: 
     description: a role that gives a cool power
     assumeRolePolicyDocument: |
