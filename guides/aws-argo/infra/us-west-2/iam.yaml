@@ -1,4 +1,4 @@
-apiVersion: identity.aws.crossplane.io/v1alpha3
+apiVersion: iam.aws.crossplane.io/v1beta1
 kind: IAMRole
 metadata:
   labels:
@@ -24,8 +24,8 @@ spec:
   reclaimPolicy: Delete
   roleName: argo-west-iamrole
 ---
-apiVersion: identity.aws.crossplane.io/v1alpha3
-kind: IAMRolePolicyAttachment
+apiVersion: iam.aws.crossplane.io/v1beta1
+kind: RolePolicyAttachment
 metadata:
   labels:
     provider: aws
@@ -38,8 +38,8 @@ spec:
   roleNameRef:
     name: argo-west-iamrole
 ---
-apiVersion: identity.aws.crossplane.io/v1alpha3
-kind: IAMRolePolicyAttachment
+apiVersion: iam.aws.crossplane.io/v1beta1
+kind: RolePolicyAttachment
 metadata:
   labels:
     provider: aws

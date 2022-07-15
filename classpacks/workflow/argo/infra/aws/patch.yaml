@@ -44,7 +44,7 @@ spec:
 #   vpcIdRef:
 #     name: argo-vpc
 # ---
-# apiVersion: identity.aws.crossplane.io/v1alpha3
+# apiVersion: iam.aws.crossplane.io/v1beta1
 # kind: IAMRole
 # metadata:
 #   name: iamrole
