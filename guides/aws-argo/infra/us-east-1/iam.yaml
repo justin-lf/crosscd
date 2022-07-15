@@ -23,7 +23,7 @@ spec:
   providerConfigRef:
     name: aws-provider-east
   deletionPolicy: Delete
-  roleName: argo-east-iamrole
+
 ---
 apiVersion: iam.aws.crossplane.io/v1beta1
 kind: RolePolicyAttachment

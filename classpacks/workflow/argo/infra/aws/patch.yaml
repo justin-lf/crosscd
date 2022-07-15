@@ -51,8 +51,9 @@ spec:
 # metadata:
 #   name: iamrole
 # spec:
-#   roleName: argo-demo-iamrole
-#   description: iam role for wordpress eks
+#   forProvider:
+#     roleName: argo-demo-iamrole
+#     description: iam role for wordpress eks
 # ---
 # apiVersion: ec2.aws.crossplane.io/v1beta1
 # kind: InternetGateway

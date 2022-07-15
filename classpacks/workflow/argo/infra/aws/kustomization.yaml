@@ -7,7 +7,7 @@ bases:
 # - ./subnet-1
 # - ./subnet-2
 # - ./subnet-3
-# - ../../../../../aws/services/identity/iamrole
+- ../../../../../aws/services/identity/iamrole
 # - ../../../../../aws/services/database/dbsubnetgroup
 # - ../../../../../aws/services/network/internetgateway
 # - ../../../../../aws/services/network/routetable

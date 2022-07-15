@@ -23,7 +23,7 @@ spec:
   providerConfigRef:
     name: aws-provider-west
   deletionPolicy: Delete
-  roleName: argo-west-iamrole
+
 ---
 apiVersion: iam.aws.crossplane.io/v1beta1
 kind: RolePolicyAttachment
