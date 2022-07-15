@@ -1,5 +1,5 @@
 apiVersion: iam.aws.crossplane.io/v1beta1
-kind: IAMRolePolicyAttachment
+kind: RolePolicyAttachment
 metadata:
   name: iamrolepolicyattachment
 spec:
