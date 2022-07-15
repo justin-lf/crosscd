@@ -46,14 +46,13 @@ spec:
 #   vpcIdRef:
 #     name: argo-vpc
 # ---
-# apiVersion: iam.aws.crossplane.io/v1beta1
-# kind: Role
-# metadata:
-#   name: iamrole
-# spec:
-#   forProvider:
-#     roleName: argo-demo-iamrole
-#     description: iam role for wordpress eks
+apiVersion: iam.aws.crossplane.io/v1beta1
+kind: Role
+metadata:
+  name: argo-iamrole
+spec:
+  forProvider:
+    description: iam role for wordpress eks
 # ---
 # apiVersion: ec2.aws.crossplane.io/v1beta1
 # kind: InternetGateway

@@ -10,6 +10,8 @@ spec:
   ## wellknown policy arn
   forProvider:
     policyArn: arn:aws:iam::aws:policy/AmazonEKSServicePolicy
+    roleNameRef:
+      name: argo-iamrole
   deletionPolicy: Delete
   providerConfigRef:
     name: aws-provider
